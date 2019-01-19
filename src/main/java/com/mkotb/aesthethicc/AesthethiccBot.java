@@ -55,7 +55,7 @@ public class AesthethiccBot {
     }
 
     public static void main(String[] args) {
-        new AesthethiccBot(args[0]);
+        new AesthethiccBot(System.getenv("TELEGRAM_KEY"));
     }
 
     private void handleIncomingQuery(InlineQueryEvent event) {
