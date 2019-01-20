@@ -19,7 +19,7 @@ public class MockingAesthethicc implements TextTransformer {
         for (int i = 1; i < chars.length; i++) {
             char original = chars[i];
 
-            if (ThreadLocalRandom.current().nextInt(100) > 50) {
+            if (ThreadLocalRandom.current().nextInt(100) > 75) {
                 original = Character.toUpperCase(original);
             } else {
                 original = Character.toLowerCase(original);
