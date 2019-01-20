@@ -8,10 +8,7 @@ import com.jtelegram.api.inline.result.InlineResultArticle;
 import com.jtelegram.api.requests.inline.AnswerInlineQuery;
 import com.jtelegram.api.requests.message.framework.ParseMode;
 import com.jtelegram.api.update.PollingUpdateProvider;
-import com.mkotb.aesthethicc.transform.ChillAesthethicc;
-import com.mkotb.aesthethicc.transform.ClapperAesthethicc;
-import com.mkotb.aesthethicc.transform.ClassicAesthethicc;
-import com.mkotb.aesthethicc.transform.YellAesthethicc;
+import com.mkotb.aesthethicc.transform.*;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -27,6 +24,7 @@ public class AesthethiccBot {
         transformers.add(new ClapperAesthethicc());
         transformers.add(new ChillAesthethicc());
         transformers.add(new YellAesthethicc());
+        transformers.add(new MockingAesthethicc());
 
         TelegramBotRegistry
                 .builder()
