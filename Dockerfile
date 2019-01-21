@@ -4,4 +4,4 @@ WORKDIR /usr/src/bot
 COPY . /usr/src/bot
 
 RUN mvn clean package
-CMD ["sh", "-c", "java -jar /usr/src/bot/jar/aesthethicc-bot-1.0-SNAPSHOT.jar -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=1098"]
+CMD ["sh", "-c", "java -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=8989 -Dcom.sun.management.jmxremote.rmi.port=8989 -jar /usr/src/bot/jar/aesthethicc-bot-1.0-SNAPSHOT.jar"]
