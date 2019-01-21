@@ -6,4 +6,4 @@ WORKDIR /usr/src/bot
 COPY . /usr/src/bot
 
 RUN mvn clean package
-CMD ["java", "-jar /usr/src/bot/jar/aesthethicc-bot-1.0-SNAPSHOT.jar ${JVM_ARGS}"]
+CMD ["sh", "-c", "java -jar /usr/src/bot/jar/aesthethicc-bot-1.0-SNAPSHOT.jar ${JVM_ARGS}"]
