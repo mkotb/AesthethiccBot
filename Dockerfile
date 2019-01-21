@@ -1,6 +1,6 @@
 FROM maven:3.6.0-jdk-8-alpine
 
-ENV JVM_ARGS
+ENV JVM_ARGS=""
 
 WORKDIR /usr/src/bot
 COPY . /usr/src/bot
